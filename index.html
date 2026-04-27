@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conj. Res. Port de France</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sistema de Agendamento  
+<br>Conj. Res. Port de France</h1>
+
+<h2>Identificação do morador</h2>
+
+<label>Nome:</label>
+<input type="text" id="nome" placeholder="Ex.: João Silva">
+
+<label>Apartamento:</label>
+<input type="text" id="apto" placeholder="Ex.: 101">
+
+<br><br>
+
+<button onclick="definirMorador()">Entrar como morador</button>
+
+<p id="moradorAtual" style="font-weight: bold;"></p>
+
+<hr>
+
+<h2>Nova reserva</h2>
+
+<label>Espaço:</label>
+<select id="espaco">
+  <option value="quadra_tenis">Quadra de Tênis</option>
+  <option value="quadra_poliesportiva">Quadra Poliesportiva</option>
+  <option value="salao_festas">Salão de Festas</option>
+  <option value="churrasqueira_lazer">Churrasqueira Lazer</option>
+  <option value="churrasqueira_garagem">Churrasqueira Garagem</option>
+</select>
+
+<br><br>
+
+<label>Data:</label>
+<input type="date" id="data">
+
+<br><br>
+
+<label>Horário início:</label>
+<input type="time" id="inicio">
+
+<label>Horário fim:</label>
+<input type="time" id="fim">
+
+<br><br>
+
+<button onclick="criarReserva()">Criar reserva</button>
+
+<h2>Reservas cadastradas</h2>
+<ul id="lista"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+``
